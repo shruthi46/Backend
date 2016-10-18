@@ -79,7 +79,7 @@ body {
 
 
 
-		<form class="navbar-form navbar-left" role="search">
+		<%-- <form class="navbar-form navbar-left" role="search">
 			<div class="form-group">
 
 
@@ -100,7 +100,7 @@ body {
 					</ul>
 				</div>
 			</div>
-		</form>
+		</form> --%>
 	</nav>
 	<c:choose>
 		<c:when test="${!Hideothers}">

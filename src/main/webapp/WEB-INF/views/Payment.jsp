@@ -30,32 +30,7 @@
   }
   </style>
 </head>
-<!-- <body>
-<h1><img src="C:\Users\lakshmideepthi\Desktop\my website\logo.png" alt="Test Image" width="200" height="200" style="margin:-60px 0px 0px 5px" align="left"></h1>
-<div class>
-  <h1 style="color:black;font-family:algerian;text-align:left;background-color:white">Gleznot World<br><font size="3">Add color to your life!</font>
-  <img src="C:\Users\lakshmideepthi\Desktop\my website\insta.png" alt="Test Image" width="30" height="30" align="right">
-  <img src="C:\Users\lakshmideepthi\Desktop\my website\twitter.png" alt="Test Image" width="35" height="30" align="right">
-  <img src="C:\Users\lakshmideepthi\Desktop\my website\fb.png" alt="Test Image" width="35" height="30" align="right"></h1>
-  
-</div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a></div>
-   
-    <ul class="nav navbar-nav navbar-right">
- <li><a href="Home"><span class="glyphicon glyphicon-user"></span> Home</a></li>
-<li><a href="loginname.html"><span class="glyphicon glyphicon-log-in"></span> About US</a></li>
-<li><a href=<c:url value="perform_logout"/>>Logout</a></li>
-     
-    </ul>
-  
-  <ul class="nav navbar-nav navbar-left">
-<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Contacts</a></li>
-</ul>
-</nav> -->
 <body background="http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-1.jpg">
  <div class="text-center" >
   <h1 style="font-family:Georgia; font-size:40px;"><i>DigiCart </i>
@@ -66,20 +41,26 @@
   </h1>
   </div>
    <nav class="navbar navbar-inverse">
-   <div class="container-fluid">
-     <ul class="nav navbar-nav navbar-right">
-	 <!-- <li><a href="Home.jsp"> HOME</a></li> -->
-				<sec:authorize access="isAuthenticated()">
-	<li><a href="<c:url value="/perform_logout" />">Logout</a></li>
-	<!-- <li><a href="">Welcome  <sec:authentication property="principal.username"/></a></li> -->
-</sec:authorize>
-					<li><a href="#"> ABOUT US</a></li>
-					<li><a href="#"> CONTACT US</a></li>
-					<sec:authorize access="!isAuthenticated()">
-<li><a href="register">Sign Up</a>	
-					</sec:authorize>
- 				</ul>
-				</div>  
+	<div class="container-fluid">
+
+		<ul class="nav navbar-nav navbar-right"
+			style:backgroundcolor="w3-blue">
+			<sec:authorize access="isAuthenticated()">
+
+				<li><a href="">Welcome <sec:authentication
+							property="principal.username" /></a></li>
+				<li><a href="<c:url value="/perform_logout" />">LOGOUT</a></li>
+			</sec:authorize>
+			
+
+			<li><a href="ABOUTUS"> ABOUT US</a></li>
+			<li><a href="CONTACTUS"> CONTACT US</a></li>
+			<sec:authorize access="!isAuthenticated()">
+				<li><a href="register">SIGN UP</a>
+				<li><a href="login">LOGIN</a></li>
+
+			</sec:authorize>
+		</ul>
       </nav>
 
 <div class="container">

@@ -44,7 +44,7 @@ width:100%;
   <nav class="navbar navbar-inverse">
   <div class="container-fluid"> 
   <div class="navbar-header" class=" pull-left">
-     <a class="navbar-brand" style="font-size:15px;" href="#"><span class="glyphicon glyphicon-user"></span> WELCOME ${msg} </a>
+     <a class="navbar-brand" style="font-size:15px;" href="#"><span class="glyphicon glyphicon-user"></span> WELCOME ADMIN ${msg} </a>
     </div>
      <ul class="nav navbar-nav navbar-right" style="margin-bottom:0px;">
       
